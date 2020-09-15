@@ -1,0 +1,13 @@
+html, body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+html header, body header {
+  background-color: #35424A;
+  width: 100vh;
+  margin: auto;
+  border-bottom: 2px solid purple;
+}
+/*# sourceMappingURL=style.css.map */
