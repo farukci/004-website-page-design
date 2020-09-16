@@ -65,5 +65,72 @@ a {
 .banner {
   background-image: url("../images/showcase.jpg");
   width: 100%;
-  height: 50vh;
+  height: 43vh;
+  color: #fff;
+}
+
+.banner .banner-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.banner .banner-title h1 {
+  font-size: 3.2rem;
+  padding-bottom: 40px;
+}
+
+.banner .banner-title p {
+  font-size: 1.3rem;
+}
+
+.subscribe {
+  background-color: #35424A;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 200px;
+  flex-direction: row;
+  height: 100px;
+}
+
+.subscribe form {
+  display: flex;
+  flex-direction: row;
+}
+
+.subscribe form input {
+  height: 4vh;
+  width: 13vw;
+}
+
+.subscribe form button {
+  color: #fff;
+  background-color: #A9508B;
+  border-style: none;
+  margin-left: 5px;
+  width: 6vw;
+}
+
+.lessons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lessons .html, .lessons .css, .lessons .design {
+  height: 200px;
+  width: 200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  height: 100px;
+  background-color: #FFFAF0;
+  border-top: 3px solid #A9508B;
 }
