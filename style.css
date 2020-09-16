@@ -1,13 +1,46 @@
 html, body {
-  font-size: 16px;
+  font: 16px Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f4f4f4;
 }
 
-html header, body header {
+html header .container, body header .container {
   background-color: #35424A;
-  width: 100vh;
-  margin: auto;
+  color: white;
   border-bottom: 2px solid purple;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+html header .container span, body header .container span {
+  color: purple;
+}
+
+html header .container nav ul, body header .container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html header .container nav ul li, body header .container nav ul li {
+  margin: 0px 10px;
+}
+
+html .banner, body .banner {
+  clear: both;
 }
 /*# sourceMappingURL=style.css.map */
