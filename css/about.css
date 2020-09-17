@@ -104,7 +104,8 @@ a {
   color: #fff;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 0 200px;
   margin: 0 auto;
   flex-direction: row;
   min-height: 100px;
@@ -128,6 +129,13 @@ a {
   margin-left: 5px;
   min-width: 6vw;
   padding: 5px;
+}
+
+@media (max-width: 1100px) {
+  .subscribe {
+    justify-content: space-evenly;
+    padding: 0 50px;
+  }
 }
 
 @media (max-width: 800px) {

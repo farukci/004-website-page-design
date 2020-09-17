@@ -24,7 +24,8 @@
 
 @media (max-width:800px) {
     .lesson-boxes {
-        width: 100%;
+        border: 2px solid red;
+        width: 95%;
+        margin: 0 auto;
     }
-
 }
