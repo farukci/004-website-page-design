@@ -1,9 +1,4 @@
-$background-color: #f4f4f4;
-$font-stack: Arial, Helvetica, sans-serif;
-$primary-color: #35424A;
-$secondary-color:#A9508B;
-$footer-color: #FFFAF0;
-$hover-color: #ababac;
+@import "config";
 
 
 * {
@@ -13,25 +8,20 @@ $hover-color: #ababac;
 }
 
 body {
-    background-color: $background-color;
-    font-family: $font-stack;
-    font-size: 16px;
-    line-height: 1.5;
+    background-color: $primaryBackground-color;
+    font: $primaryFontAndSize;
 }
 
-// img {
-//     // width: 100%;
-// }
 
 a {
     text-decoration: none;
 }
 
 .showcase {
-    background-color: $primary-color;
-    color: #fff;
+    background-color: $primaryBackground-color;
+    color: $primaryText-color;
     height: 100px;
-    border-bottom: 3px solid $secondary-color;
+    border-bottom: 3px solid $secondaryText-color;
 
     .container {
         max-width: 85%;
@@ -48,7 +38,7 @@ a {
             }
     
             span {
-                color: $secondary-color;
+                color: $secondaryText-color;
             }
     
             ul {
@@ -62,10 +52,10 @@ a {
             }
     
             a {
-                color: #fff;
+                color: $primaryText-color;
     
                 &:hover {
-                    color: $hover-color;
+                    color: $hoverLink-color;
                     font-weight: bolder;
                 }
             }
@@ -77,7 +67,7 @@ a {
     background-image: url("../images/showcase.jpg");
     width: 100%;
     height: 43vh;
-    color: #fff;
+    color: $primaryText-color;
     .banner-title {
         display: flex;
         flex-direction: column;
@@ -94,8 +84,8 @@ a {
 }
 
 .subscribe {
-    background-color: $primary-color;
-    color: #fff;
+    background-color: $primaryBackground-color;
+    color: $primaryText-color;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -111,8 +101,8 @@ a {
 
         }
         button {
-            color: #fff;
-            background-color: $secondary-color;
+            color: $primaryText-color;
+            background-color: $secondaryText-color;
             border-style: none;
             margin-left: 5px;
             width: 6vw;
@@ -137,6 +127,6 @@ a {
 
 footer {
     height: 100px;
-    background-color: $footer-color;
-    border-top: 3px solid $secondary-color;
+    background-color: $footerBackground-color;
+    border-top: 3px solid $secondaryText-color;
 }
