@@ -1,0 +1,25 @@
+.subscribe {
+    background-color: $primaryBackground-color;
+    color: $primaryText-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px;
+    flex-direction: row;
+    height: 100px;
+    form {
+        display: flex;
+        flex-direction: row;
+        input{
+            height: 4vh;
+            width: 13vw;
+        }
+        button {
+            color: $primaryText-color;
+            background-color: $secondaryText-color;
+            border-style: none;
+            margin-left: 5px;
+            width: 6vw;
+        }
+    }
+}

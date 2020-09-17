@@ -121,7 +121,7 @@ a {
   width: 6vw;
 }
 
-.lessons {
+.lesson-boxes {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -130,7 +130,7 @@ a {
   padding: 20px;
 }
 
-.lessons .html, .lessons .css, .lessons .design {
+.lesson-boxes .html, .lesson-boxes .css, .lesson-boxes .design {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -138,11 +138,11 @@ a {
   justify-content: center;
 }
 
-.lessons .html img, .lessons .css img, .lessons .design img {
+.lesson-boxes .html img, .lesson-boxes .css img, .lesson-boxes .design img {
   width: 90px;
 }
 
-.lessons .html p, .lessons .css p, .lessons .design p {
+.lesson-boxes .html p, .lesson-boxes .css p, .lesson-boxes .design p {
   text-align: center;
   margin-top: 20px;
 }
