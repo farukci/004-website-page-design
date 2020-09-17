@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #35424A;
+  background-color: #f4f4f4;
   font: 15px/1.5 Arial, Helvetica, sans-serif;
 }
 
@@ -46,18 +46,27 @@ a {
   list-style-type: none;
 }
 
-.showcase .container nav li {
+.showcase .container nav ul li {
   padding: 15px;
   text-transform: uppercase;
 }
 
-.showcase .container nav a {
+.showcase .container nav ul li a {
   color: #fff;
 }
 
-.showcase .container nav a:hover {
+.showcase .container nav ul li a:hover {
   color: #ababac;
   font-weight: bolder;
+}
+
+.showcase .container nav ul li #home {
+  color: #A9508B;
+  font-weight: bolder;
+}
+
+.showcase .container nav ul li #home:hover {
+  color: #ababac;
 }
 
 .banner {
@@ -71,12 +80,12 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 .banner .banner-title h1 {
-  font-size: 3.2rem;
-  padding-bottom: 40px;
+  font-size: 3.5rem;
+  padding-bottom: 20px;
 }
 
 .banner .banner-title p {
@@ -116,19 +125,38 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
 }
 
 .lessons .html, .lessons .css, .lessons .design {
-  height: 200px;
-  width: 200px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.lessons .html img, .lessons .css img, .lessons .design img {
+  width: 90px;
+}
+
+.lessons .html p, .lessons .css p, .lessons .design p {
+  text-align: center;
+  margin-top: 20px;
 }
 
 footer {
-  height: 100px;
+  height: 140px;
   background-color: #FFFAF0;
   border-top: 3px solid #A9508B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer img {
+  width: 10vw;
 }

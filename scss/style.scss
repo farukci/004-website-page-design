@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: $primaryBackground-color;
+    background-color: $secondaryBackground-color;
     font: $primaryFontAndSize;
 }
 
@@ -22,7 +22,6 @@ a {
     color: $primaryText-color;
     height: 100px;
     border-bottom: 3px solid $secondaryText-color;
-
     .container {
         max-width: 85%;
         padding: 20px 30px;
@@ -32,31 +31,32 @@ a {
             display: flex;
             align-items: center;
             justify-content: space-between;
-    
             h1 {
                 font-size: 1.9rem;
             }
-    
             span {
                 color: $secondaryText-color;
             }
-    
             ul {
                 display: flex;
                 list-style-type: none;
-            }
-    
-            li {
-                padding: 15px;
-                text-transform: uppercase;
-            }
-    
-            a {
-                color: $primaryText-color;
-    
-                &:hover {
-                    color: $hoverLink-color;
-                    font-weight: bolder;
+                li {
+                    padding: 15px;
+                    text-transform: uppercase;
+                    a {
+                        color: $primaryText-color;
+                        &:hover {
+                            color: $hoverLink-color;
+                            font-weight: bolder;
+                        }
+                    }
+                    #home {
+                        color: $secondaryText-color;
+                        font-weight: bolder;
+                        &:hover {
+                            color: $hoverLink-color;
+                        }
+                    }
                 }
             }
         }
@@ -72,10 +72,10 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 80px;
+        padding-top: 100px;
         h1 {
-            font-size: 3.2rem;
-            padding-bottom: 40px;
+            font-size: 3.5rem;
+            padding-bottom: 20px;
         }
         p {
             font-size: 1.3rem;
@@ -98,7 +98,6 @@ a {
         input{
             height: 4vh;
             width: 13vw;
-
         }
         button {
             color: $primaryText-color;
@@ -114,19 +113,36 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
     .html, .css, .design {
-        height: 200px;
-        width: 200px;
         padding: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        // justify-content: center;
+        justify-content: center;
+        img {
+            width: 90px;
+        }
+        p {
+            text-align: center;
+            margin-top: 20px;
+        }
     }
 }
 
+
+
 footer {
-    height: 100px;
+    height: 140px;
     background-color: $footerBackground-color;
     border-top: 3px solid $secondaryText-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: 10vw;
+    }
 }
