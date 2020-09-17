@@ -16,7 +16,7 @@ a {
 .showcase {
   background-color: #35424A;
   color: #fff;
-  height: 100px;
+  min-height: 100px;
   border-bottom: 3px solid #A9508B;
 }
 
@@ -34,7 +34,8 @@ a {
 }
 
 .showcase .container nav h1 {
-  font-size: 1.9rem;
+  font-size: 2rem;
+  white-space: nowrap;
 }
 
 .showcase .container nav span {
@@ -47,7 +48,7 @@ a {
 }
 
 .showcase .container nav ul li {
-  padding: 15px;
+  padding: 0px 15px;
   text-transform: uppercase;
 }
 
@@ -67,6 +68,16 @@ a {
 
 .showcase .container nav ul li #home:hover {
   color: #ababac;
+}
+
+@media (max-width: 800px) {
+  .showcase .container {
+    padding: 10px 10px;
+  }
+  .showcase .container nav {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .showcase .container nav ul li #services {
@@ -93,10 +104,11 @@ a {
   color: #fff;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 200px;
+  justify-content: space-evenly;
+  margin: 0 auto;
   flex-direction: row;
-  height: 100px;
+  min-height: 100px;
+  white-space: nowrap;
 }
 
 .subscribe form {
@@ -106,7 +118,7 @@ a {
 
 .subscribe form input {
   height: 4vh;
-  width: 13vw;
+  min-width: 230px;
 }
 
 .subscribe form button {
@@ -114,11 +126,21 @@ a {
   background-color: #A9508B;
   border-style: none;
   margin-left: 5px;
-  width: 6vw;
+  min-width: 6vw;
+  padding: 5px;
+}
+
+@media (max-width: 800px) {
+  .subscribe {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 0 20px;
+  }
 }
 
 .main {
-  height: 65vh;
+  min-height: 65vh;
 }
 
 .main .container {
@@ -196,5 +218,5 @@ footer {
 }
 
 footer img {
-  width: 10vw;
+  width: 200px;
 }
