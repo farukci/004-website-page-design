@@ -1,0 +1,57 @@
+.main {
+    height: 65vh;
+    .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 80%;
+        padding-top: 20px;
+        article {
+            width: 65%;
+            h1{
+                margin-bottom: 15px;
+            }
+            ul {
+                list-style-type: none;
+                li {
+                    background-color: $liBackground-color;
+                    margin: 5px 0;
+                    padding: 35px 20px 20px;
+                    border: 1px solid $liBorder-color;
+                    h3, p {
+                        padding-bottom: 15px;
+                    }
+                }
+            }
+        }
+        aside {
+            width: 30%;
+            padding: 15px;
+            background-color: $primaryBackground-color;
+            color: $primaryText-color;
+            h3 {
+                margin: 15px 0;
+            }
+            form {
+                .name, .email, .msg {
+                    margin-bottom: 5px;
+                    input {
+                        height: 30px;
+                        width: 95%;
+                    }
+                    textarea {
+                        width: 95%;
+                        height: 40px;
+                    }
+                }
+                button {
+                    background-color: $secondaryText-color;
+                    padding: 10px 20px;
+                    border: none;
+                    color: $primaryText-color;
+                }
+            }
+        }
+    }
+}

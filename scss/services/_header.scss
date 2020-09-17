@@ -1,0 +1,25 @@
+.showcase {
+    .container {
+        nav {
+            ul {
+                li {
+                    #services {
+                        color: $secondaryText-color;
+                        font-weight: bolder;
+                        &:hover {
+                            color: $hoverLink-color;
+                        }
+                    }
+                    #home {
+                        color: $primaryText-color;
+                        font-weight: normal;
+                        &:hover {
+                            color: $hoverLink-color;
+                            font-weight: bolder;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.showcase {
+  background-color: #35424A;
+  color: #fff;
+  height: 100px;
+  border-bottom: 3px solid #A9508B;
+}
+
+.showcase .container {
+  max-width: 85%;
+  padding: 20px 50px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.showcase .container nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.showcase .container nav h1 {
+  font-size: 1.9rem;
+}
+
+.showcase .container nav span {
+  color: #A9508B;
+}
+
+.showcase .container nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.showcase .container nav ul li {
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+.showcase .container nav ul li a {
+  color: #fff;
+}
+
+.showcase .container nav ul li a:hover {
+  color: #ababac;
+  font-weight: bolder;
+}
+
+.showcase .container nav ul li #home {
+  color: #A9508B;
+  font-weight: bolder;
+}
+
+.showcase .container nav ul li #home:hover {
+  color: #ababac;
+}
+
+.showcase .container nav ul li #services {
+  color: #A9508B;
+  font-weight: bolder;
+}
+
+.showcase .container nav ul li #services:hover {
+  color: #ababac;
+}
+
+.showcase .container nav ul li #home {
+  color: #fff;
+  font-weight: normal;
+}
+
+.showcase .container nav ul li #home:hover {
+  color: #ababac;
+  font-weight: bolder;
+}
+
+.subscribe {
+  background-color: #35424A;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 200px;
+  flex-direction: row;
+  height: 100px;
+}
+
+.subscribe form {
+  display: flex;
+  flex-direction: row;
+}
+
+.subscribe form input {
+  height: 4vh;
+  width: 13vw;
+}
+
+.subscribe form button {
+  color: #fff;
+  background-color: #A9508B;
+  border-style: none;
+  margin-left: 5px;
+  width: 6vw;
+}
+
+.main {
+  height: 65vh;
+}
+
+.main .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 20px;
+}
+
+.main .container article {
+  width: 65%;
+}
+
+.main .container article h1 {
+  margin-bottom: 15px;
+}
+
+.main .container article ul {
+  list-style-type: none;
+}
+
+.main .container article ul li {
+  background-color: #E6E6E6;
+  margin: 5px 0;
+  padding: 35px 20px 20px;
+  border: 1px solid #CCC;
+}
+
+.main .container article ul li h3, .main .container article ul li p {
+  padding-bottom: 15px;
+}
+
+.main .container aside {
+  width: 30%;
+  padding: 15px;
+  background-color: #35424A;
+  color: #fff;
+}
+
+.main .container aside h3 {
+  margin: 15px 0;
+}
+
+.main .container aside form .name, .main .container aside form .email, .main .container aside form .msg {
+  margin-bottom: 5px;
+}
+
+.main .container aside form .name input, .main .container aside form .email input, .main .container aside form .msg input {
+  height: 30px;
+  width: 95%;
+}
+
+.main .container aside form .name textarea, .main .container aside form .email textarea, .main .container aside form .msg textarea {
+  width: 95%;
+  height: 40px;
+}
+
+.main .container aside form button {
+  background-color: #A9508B;
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+}
+
+footer {
+  height: 140px;
+  background-color: #FFFAF0;
+  border-top: 3px solid #A9508B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer img {
+  width: 10vw;
+}
