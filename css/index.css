@@ -180,6 +180,7 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
+  width: 33%;
 }
 
 .lesson-boxes .html img, .lesson-boxes .css img, .lesson-boxes .design img {
@@ -192,8 +193,7 @@ a {
 
 @media (max-width: 800px) {
   .lesson-boxes {
-    border: 2px solid red;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
   }
 }
